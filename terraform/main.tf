@@ -21,6 +21,6 @@ resource "aws_iam_group_membership" "team_membership" {
 
 resource "aws_iam_group_policy_attachment" "attach-policy" {
    group = aws_iam_group.developers.name
-   policy_arn = arn:aws:iam::aws:policy/ReadOnlyAccess
+   policy_arn = "arn:aws:iam::aws:policy/ReadOnlyAccess"
 
 }
