@@ -13,6 +13,7 @@ resource "aws_iam_group" "developers" {
 }
 
 resource "aws_iam_group_membership" "team_membership" {
+   name  = "developers-group-membership"
    users = values(aws_iam_user.iam-users)[*].name
    group = aws_iam_group.developers.name
 
