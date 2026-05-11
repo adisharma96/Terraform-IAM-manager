@@ -1,8 +1,9 @@
 variable "username" {
    default = [
         "Rahul",
-        "Aditya"
-        
+        "Aditya",
+        "Ajay",
+        "John"        
    ]
 
 }
